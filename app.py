@@ -3,11 +3,11 @@ import pandas as pd
 import pickle
 import json
 
-with open('models/lr_model.pkl', 'rb') as f:
+with open('lr_model.pkl', 'rb') as f:
     model = pickle.load(f)
-with open('models/scaler.pkl', 'rb') as f:
+with open('scaler.pkl', 'rb') as f:
     scaler = pickle.load(f)
-with open('models/feature_names.json', 'r') as f:
+with open('feature_names.json', 'r') as f:
     feature_names = json.load(f)
 
 st.set_page_config(page_title="LoL Win Predictor", page_icon="🎮", layout="wide")
